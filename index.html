@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- BS 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="w-50 py-5">
+            <h2>TÍNH TIỀN LƯƠNG</h2>
+            <form>
+                <div class="form-group">
+                    <label for="inputLuong">Tiền lương 1 ngày</label>
+                    <input type="number" class="form-control" id="inputLuong">
+                </div>
+                <div class="form-group">
+                    <label for="inputNgay">Số ngày làm việc</label>
+                    <input type="number" class="form-control" id="inputNgay">
+                </div>
+                <button onclick="tinhLuong()" type="button" class="btn btn-primary">Tính Lương</button>
+                <p id="txtTongLuong"></p>
+            </form>
+        </div>
+
+        <div class="w-50 py-5">
+            <h2>TÍNH ĐIỂM TRUNG BÌNH</h2>
+            <form>
+                <div class="form-group">
+                    <label for="inputToan">Toán</label>
+                    <input type="number" class="form-control" id="inputToan" placeholder="Nhập điểm Toán">
+                </div>
+                <div class="form-group">
+                    <label for="inputLy">Lý</label>
+                    <input type="number" class="form-control" id="inputLy" placeholder="Nhập điểm Lý">
+                </div>
+                <div class="form-group">
+                    <label for="inputHoa">Hóa</label>
+                    <input type="number" class="form-control" id="inputHoa" placeholder="Nhập điểm Hóa">
+                </div>
+                <div class="form-group">
+                    <label for="inputVan">Văn</label>
+                    <input type="number" class="form-control" id="inputVan" placeholder="Nhập điểm Văn">
+                </div>
+                <div class="form-group">
+                    <label for="inputAnh">Anh</label>
+                    <input type="number" class="form-control" id="inputAnh" placeholder="Nhập điểm Anh">
+                </div>
+                <button onclick="tinhDTB()" type="button" class="btn btn-primary">Tính ĐTB</button>
+                <p id="txtDTB"></p>
+            </form>
+        </div>
+
+        <div class="w-50 py-5">
+            <h2>QUY ĐỔI TỪ USD SANG VNĐ</h2>
+            <form>
+                <div class="form-group">
+                    <label for="inputUSD">Nhập số USD</label>
+                    <input type="number" class="form-control" id="inputUSD">
+                </div>
+                <button onclick="tinhVND()" type="button" class="btn btn-primary">Quy Đổi</button>
+                <p id="txtQuyDoi"></p>
+            </form>
+        </div>
+
+        <div class="w-50 py-5">
+            <h2>Tính S và P của hình chữ nhật</h2>
+            <form>
+                <div class="form-group">
+                    <label for="inputOne">Cạnh 1 HCN (cm)</label>
+                    <input type="number" class="form-control" id="inputOne">
+                </div>
+                <div class="form-group">
+                    <label for="inputTwo">Cạnh 2 HCN (cm)</label>
+                    <input type="number" class="form-control" id="inputTwo">
+                </div>
+                <button onclick="tinhSP()" type="button" class="btn btn-primary">Tính S và P</button>
+                <p id="txtSP"></p>
+            </form>
+        </div>
+
+        <div class="w-50 py-5">
+            <h2>TÍNH TỔNG 2 CHỮ SỐ</h2>
+            <form>
+                <div class="form-group">
+                    <label for="inputNum">Nhập một số có 2 chữ số</label>
+                    <input type="number" class="form-control" id="inputNum">
+                </div>
+                <button onclick="tinhTong()" type="button" class="btn btn-primary">Tính</button>
+                <p id="txtResult"></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- BS 4 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
