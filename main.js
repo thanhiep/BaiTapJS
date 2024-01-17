@@ -57,7 +57,7 @@ function tinhTB() {
     let tb = (num1 + num2 + num3 + num4 + num5) / 5
 
     document.getElementById("txtTB").innerHTML = `
-    Trung bình của 5 số là:
+    Trung bình cộng của 5 số là:
     <br>
     <p style="color:blue; font-size:30px">${tb}<p>
     `
