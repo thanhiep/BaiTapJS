@@ -37,31 +37,31 @@ function tinhLuong() {
 //? Bài tập 2
 
 /**
- * Inputs: toan, ly, hoa, van, anh
+ * Inputs: num1, num2, num3, num4, num5
  * 
  * Steps:
  *      B1: lấy dữ liệu từ form
- *      B2: tính dtb = (toan + ly + hoa + van + anh) / 5
+ *      B2: tính tb = (num1 + num2 + num3 + num4 + num5) / 5
  *      B3: xuất kết quả
  * 
- * Outputs: dtb
+ * Outputs: tb
  */
 
-function tinhDTB() {
-    let toan = Number(document.getElementById("inputToan").value);
-    let ly = Number(document.getElementById("inputLy").value);
-    let hoa = Number(document.getElementById("inputHoa").value);
-    let van = Number(document.getElementById("inputVan").value);
-    let anh = Number(document.getElementById("inputAnh").value);
+function tinhTB() {
+    let num1 = Number(document.getElementById("inputNum1").value);
+    let num2 = Number(document.getElementById("inputNum2").value);
+    let num3 = Number(document.getElementById("inputNum3").value);
+    let num4 = Number(document.getElementById("inputNum4").value);
+    let num5 = Number(document.getElementById("inputNum5").value);
 
-    let dtb = (toan + ly + hoa + van + anh) / 5
+    let tb = (num1 + num2 + num3 + num4 + num5) / 5
 
-    document.getElementById("txtDTB").innerHTML = `
-    Điểm trung bình của 5 môn là:
+    document.getElementById("txtTB").innerHTML = `
+    Trung bình của 5 số là:
     <br>
-    <p style="color:blue; font-size:30px">${dtb} Điểm<p>
+    <p style="color:blue; font-size:30px">${tb}<p>
     `
-    document.getElementById("txtDTB").classList.add("styleDTB")
+    document.getElementById("txtTB").classList.add("styleTB")
 }
 
 
